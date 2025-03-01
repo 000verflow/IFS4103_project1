@@ -6,7 +6,6 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-       - ./.docker/000-default.conf:/etc/apache2/sites-available/000-default.conf
+       - ./.docker/000-default:/etc/apache2/sites-available/000-default
     ports:
       - 9001:80
-    image: moeinfatehi/file_upload_vulnerabilities:latest
