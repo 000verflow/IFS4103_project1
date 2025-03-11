@@ -1,4 +1,4 @@
-var _validFileExtensions = [".jpg", ".jpeg", ".bmp", ".gif", ".png"];
+var _validFileExtensions = [".gif"];
 function Validate(oForm) {
     var arrInputs = oForm.getElementsByTagName("input");
     for (var i = 0; i < arrInputs.length; i++) {
@@ -16,7 +16,7 @@ function Validate(oForm) {
                 }
 
                 if (!blnValid) {
-                    alert("Sorry, " + sFileName + " is invalid, allowed extensions are: " + _validFileExtensions.join(", "));
+                    alert("Sorry, " + sFileName + " is invalid, allowed extension is: " + _validFileExtensions.join(", "));
                     return false;
                 }
             }

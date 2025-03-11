@@ -1,2 +1,3 @@
-# IFS4103 Project 1
+# IFS Project 1
 
+`sudo docker compose up -d --build`
